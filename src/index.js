@@ -1,2 +1,12 @@
-console.log("Hello World")
-console.log("Jay Shree ram")
+import connectDB from "./db/db.js";
+
+connectDB()
+.then((succ)=>{
+    console.log("Connection Successful")
+})
+.catch((err)=>{
+    console.log(`Mongo_db connection failed ${err}`)
+})
+
+
+
